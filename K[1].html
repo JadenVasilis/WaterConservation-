@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rivers in India Details 2020</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header>
+        <h1>Water Saving </h1>
+        <p>States and  River Water Resources</p>
+    </header>
+    <main>
+        <ul id="states"></ul>
+        <ul id="rivers"></ul>
+        <pre id="output"></pre>
+    </main>   
+    <script>
+        //XMLHttpRequest() - has responseXML property in the response
+        
+        document.addEventListener('DOMContentLoaded', ()=>{
+            //fetch the data as soon as the page has loaded
+            let url = "read1.xml";
+            fetch(url)
+            .then(response=>response.text())
+            .then(data=>{
+                //console.log(data);  //string
+                let parser = new DOMParser();
+                let xml = parser.parseFromString(data, "application/xml");
+         
+                console.log(xml);
+                buildRiverList(xml);
+                buildStateList(xml);
+            });
+        })
+        
+        function buildRiverList(x){
+            let list = document.getElementById('rivers');
+            let rivers = x.getElementsByTagName('river');
+            for(let i=0; i<rivers.length; i++){
+                let li = document.createElement('li');
+                let river = rivers[i].firstChild.nodeValue;
+                li.textContent = river;
+                list.appendChild(li);
+            }
+        }
+        
+        function buildStateList(x){
+            let list = document.getElementById('states');
+            let states = x.getElementsByTagName('state');
+            for(let i=0; i<states.length; i++){
+                let li = document.createElement('li');
+                let stateName = states[i].firstChild.nodeValue;
+                let person = states[i].getAttribute('owner');
+                li.textContent = `${stateName} - ${person}`;
+                list.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html> 
+<head> 
+    <title>Page Layout</title> 
+    <style> 
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #181313; 
+        }
+ 
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+         background: rgb(20, 16, 16); 
+        }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: rgb(80, 73, 73); 
+        }
+        .head1 { 
+            font-size:40px; 
+            color:#009900; 
+            font-weight:bold; 
+        } 
+        .head2 { 
+            font-size:17px; 
+            margin-left:10px; 
+            margin-bottom:15px; 
+        } 
+        body { 
+            margin: 0 auto; 
+            background-position:center; 
+            background-size: contain; 
+        } 
+        
+
+        .menu {    
+            position: sticky; 
+            top: 0; 
+            background-color:#095f91; 
+            padding:10px 0px 10px 0px; 
+            color:white; 
+            margin: 0 auto; 
+            overflow: hidden; 
+        } 
+        .menu a { 
+            float: left; 
+            color: white; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            font-size: 20px; 
+        } 
+        .menu-log { 
+            right: auto; 
+            float: right; 
+        } 
+        footer { 
+            width: 100%; 
+            bottom: 0px; 
+            background-color: #000; 
+            color: #fff; 
+            position:margin-bottom; 
+            padding-top:20px; 
+            padding-bottom:20px; 
+            text-align:center; 
+            font-size:10px; 
+            font-weight:bold; 
+        } 
+        .body_sec { 
+            margin-left:20px; 
+        } 
+        .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+        
+        /* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+        
+        
+    </style> 
+</head> 
+  
+<body> 
+      
+    <!-- Header Section -->
+    <header> 
+        <head1 style="text-align:center;"head1>
+        <div class="head1">Water Saving</div>
+        <head2 style="text-align:center;" head2> 
+        <div class="head2">A way of bettter living</div> 
+    </header> 
+      
+    <!-- Menu Navigation Bar -->
+    <div class="menu"> 
+        <a href="Home.html">HOME</a>
+        <a href="k.html">RESOURCES</a> 
+        <a href="insert.php">SIGNUP</a> 
+        <div class="menu-log"> 
+            <a href="login.php">LOGIN</a> 
+        </div> 
+    </div> 
+      
+    <!-- Body section -->
+    <div class = "body_sec">
+        <section> 
+            <h3>WATER RESOURCES IMPORTANCE</h3>
+            <pstyle="font-size:200%;"> According to many, the availability of water resources is the most serious problem at a global level. Today over 4 billion people live in scarce water conditions for at least one month a year, and just under 2 billion are forced to contend with drought six months a year. And where water is available, often it is not usable because it is polluted or wasted.
+            
+            </p>
+            </section>
+<section><pstyle="font-size:200%;">
+                Water is life in every sense of the word. As the largest natural resource, many living things humans included rely on water for survival. From cooking, drinking, flushing toilets, washing clothes, brushing teeth amongst others, humans use water in many parts of our lives. However, despite the many things that water is used for, we rarely think about water as a resource. Water as a resource is scarce and the availability of water resources is the most serious global problem. Only 3% of the world’s water resource is available for human consumption, but even some of this is unusable because it is polluted.
+                
+                
+</p></section>
+<section><pstyle="font-size:200%;">
+                The remaining 97% is frozen or too deep underground. Worldwide, a population of at least two billion people are forced to contend with drought for half of the year while another four billion live in areas of extreme scarce water conditions for at least one month a year. As the human population and the need for water-intensive activities goods and services continues to increase so will the demand for water. It is therefore important that the available freshwater reserves are maintained and protected to ensure basic human needs are met, and ecosystems and environments are not threatened.
+                
+</p></section>
+                <br/>
+                <br/>
+           
+                <div class="row">
+  <div class="column">
+<a href="WCH.html">
+    <img src="i.png" alt="i" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="news.html">
+    <img src="news.png" alt="news" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="index.html">
+    <img src="u.png" alt="register" style="width:100%">
+  </div>
+</div>
+                
+    </div>
+  <footer>
+        <p>Thanh You For Visiting</p>
+    </footer>
+</body> 
+</html>

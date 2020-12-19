@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <rivers>
+        <river id="2">Yamuna</river>
+        <river id="4">Brahmaputra</river>
+        <river id="1">Ganges</river>
+        <river id="3">Godavari</river>
+        <river id="8">Indus</river>
+        <river id="9">Ghaggar</river>
+        <river id="5">Narmada</river>
+        <river id="7">Krishna</river>
+        <river id="6">Kaveri</river>
+        <river id="10">Periyar</river>
+        <river id="11">Sutlej</river>
+        <river id="12">Tungabhadra </river>
+    </rivers>
+    <states>
+        <state owner="Ganges">Uttarakhand, Uttar Pradesh,Bihar,Jharkhand, West Bengal :-
+        </state>
+        <state owner="Yamuna">Uttarakhand, Himachal Pradesh,Uttar Pradesh, Haryana,Delhi :-
+        </state>
+        <state owner="Godavari">Maharashtra,Telangana,Chhattisgarh,Andhra Pradesh,Puducherry :-
+        </state>
+        <state owner="Brahmaputra">
+         Assam,Arunachal,Tibet :-
+         </state>
+        <state owner="Narmada">Madhya Pradesh,Maharashtra,Gujarat :- </state>
+        <state owner="Krishna">
+           Maharashtra,Karnataka,Telangana,Andhra Pradesh :- </state>
+    </states>
+</root>
